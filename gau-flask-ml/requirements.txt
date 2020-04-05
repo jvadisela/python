@@ -1,0 +1,2 @@
+Flask==1.1.2
+Flask-MonitoringDashboard==3.0.9
