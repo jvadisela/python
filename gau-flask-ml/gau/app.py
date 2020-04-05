@@ -1,13 +1,13 @@
 from flask import Flask, jsonify, request, render_template, make_response
 from util import json_utils
 
-# import flask_monitoringdashboard as dashboard
+import flask_monitoringdashboard as dashboard
 import json
 import logging
 
 app = Flask(__name__)
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
-# dashboard.bind(app)
+dashboard.bind(app)
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -61,7 +61,7 @@ def not_found(error):
     """
     In case of 400, build the response and throw as JSON
     """
-    return make_response(jsonify( { 'error': 'Bad request' } ), 400)
+    return make_response(jsonify( { 'error-400': 'Bad request' } ), 400)
 
 
 @app.errorhandler(404)
@@ -69,8 +69,8 @@ def not_found(error):
     """
     In case of 404, build the response and throw as JSON
     """
-    return make_response(jsonify( { 'error': 'Not found' } ), 404)
+    return make_response(jsonify( { 'error-404': 'Not found' } ), 404)
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')

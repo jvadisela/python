@@ -16,4 +16,4 @@ COPY . /app
 
 ENTRYPOINT [ "python" ]
 
-CMD [ "app.py" ]
+CMD [ "gau/app.py" ]
