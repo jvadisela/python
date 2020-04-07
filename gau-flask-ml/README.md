@@ -10,6 +10,15 @@ docker build -t gau-ml:latest .
 docker run -d -p 5000:5000 gau-ml
 ```
 
+go to: [http://localhost:5000/](http://localhost:5000/)
+
+You should get Welcome Page:
+
+![welcome_page](docs/welcome.png)
+
+<br>
+<br>
+
 go to: [http://localhost:5000/swagger/](http://localhost:5000/swagger/)
 
 You should get:
