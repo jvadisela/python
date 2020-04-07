@@ -89,8 +89,8 @@ def second_hello_world():
     return 'Second One'
 
 
-@app.route("/")
-def all_other():
+@app.route("/sample")
+def jsonify_op():
     app.logger.info('Processing default request')
     json_data = json.loads('{"name": "jane doe", "rollnumber": 25, "marks": 72}')
     is_valid = json_utils.is_valid_input(json_data)
@@ -103,7 +103,7 @@ def all_other():
     return jsonify(team)
 
 
-@app.route('/welcome')
+@app.route('/')
 def welcome():
     return render_template('welcome.html')  # render a template
 
