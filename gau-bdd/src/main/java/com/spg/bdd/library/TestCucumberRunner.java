@@ -1,6 +1,5 @@
 package com.spg.bdd.library;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -19,16 +18,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 				"html:target/cucumber-reports" }, monochrome = true, dryRun = false)
 public class TestCucumberRunner extends AbstractTestNGCucumberTests {
 	
-	public static WebDriver driver = null;
-	public static String DataFilesPath = "DataFiles";
-	public static String CurrentTestCaseName = "";
 	public static String moduleName = "";
-	public static String CurrentFolderPath = "";
-	public static String BrowserName = "";
 	private JsonCacheDB jsonCacheDB = new JsonCacheDB();
 	
 	@BeforeSuite
-
 	public void beforesuite() {
 		System.out.println("beforesuite");
 	}

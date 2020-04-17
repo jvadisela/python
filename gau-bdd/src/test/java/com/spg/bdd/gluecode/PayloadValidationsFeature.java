@@ -45,5 +45,7 @@ public class PayloadValidationsFeature {
 		String s = restSpec.when().get().asString();
 		System.out.println(s);
 	}
+	
+	
 
 }
