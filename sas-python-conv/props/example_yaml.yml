@@ -1,0 +1,15 @@
+# Category
+APP:
+  table1_name: emp
+  table2_name: dept
+  table3_name: sal
+  DEBUG: True
+  # Only accept True or False
+
+# Category
+DATABASE:
+  USERNAME: xiaoxu
+  PASSWORD: xiaoxu
+  HOST: 127.0.0.1
+  PORT: 5432
+  DB: xiaoxu_database
