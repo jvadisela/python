@@ -8,7 +8,7 @@ from core.utils import *
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
+# Sample
 
 def run():
     file_path = root_dir() + '/sqls/file_1.sql'
