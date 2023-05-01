@@ -1,4 +1,4 @@
-Flask==1.1.2
+Flask==2.3.2
 Flask-MonitoringDashboard==3.0.9
 flask-swagger-ui==3.25.0
 flasgger==0.9.4
